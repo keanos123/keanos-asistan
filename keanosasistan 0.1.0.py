@@ -1,7 +1,7 @@
 import time 
 import webbrowser 
 anahtar = 1
-surum = "0.1.0"
+surum = "1.1.0"
 print("selam neyi aratmak istersin ")
 print("youtube 1      \ngoogle search 2       \nsurum= 3\n")
 anahtar = 1
