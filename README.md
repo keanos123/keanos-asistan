@@ -1,3 +1,10 @@
 # keanos-asistan
-lets goooo
-this year in my first python projeckt creted the asistant. asistant right now very simple but every week or years more good ı will be 
+
+Welcome to keanos-asistan, your personal assistant project!
+
+## Installation
+
+Install dependencies using pip:
+
+```bash
+pip install -r requirements.txt
