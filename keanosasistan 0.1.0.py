@@ -2,6 +2,7 @@ import webbrowser
 import os
 import pywhatkit as pwk
 from colorama import init, Fore, Style
+import datetime  # Ekledik
 
 init(autoreset=True)  # colorama için otomatik resetleme
 
@@ -87,7 +88,13 @@ while True:
         if isim in contacts:
             numara = contacts[isim]
             mesaj = input(Fore.CYAN + "Göndermek istediğiniz mesajı girin: ")
-            pwk.sendwhatmsg(numara, mesaj, 15, 55)  # 15:55'te mesaj gönderir
+            
+            # Anlık saat ve dakika bilgisi al
+            now = datetime.datetime.now()
+            saat = now.hour
+            dakika = now.minute
+            
+            pwk.sendwhatmsg(numara, mesaj, saat, dakika)  # Anlık saat ve dakikayı kullanarak mesaj gönder
             print(Fore.CYAN + "Mesaj gönderildi!")
         else:
             print(Fore.RED + "Bu isimde bir kişi rehberde bulunamadı.")
